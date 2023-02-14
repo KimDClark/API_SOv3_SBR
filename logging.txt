@@ -1,0 +1,81 @@
+Request method:	GET
+Request URI:	https://uat.apis.nzpost.co.nz/shippingoptions-3-0/api/services?delivery_country=NZ&pickup_suburb=East%20Tamaki&delivery_suburb=Flat%20bush&diameter=235&pickup_postcode=2013&length=165&weight=2&delivery_postcode=2019&request_source=retail
+Proxy:			<none>
+Request params:	<none>
+Query params:	delivery_country=NZ
+				pickup_suburb=East Tamaki
+				delivery_suburb=Flat bush
+				diameter=235
+				pickup_postcode=2013
+				length=165
+				weight=2
+				delivery_postcode=2019
+				request_source=retail
+Form params:	<none>
+Path params:	<none>
+Headers:		client_id=9260956ce78a4b4897380394c2277b00
+				Authorization=Bearer eyJhbGciOiJIUzI1NiIsImtpZCI6IlRFU1QiLCJwaS5hdG0iOiIxIn0.eyJzY29wZSI6W10sImNsaWVudF9pZCI6ImFiODRlM2RmZWFkODQ3ZDZiZGJhNDRiM2FlMzk0MDlmIiwiZXhwIjoxNjc1MjkyODkxfQ.SZHOHhFkrEdyRbNKvW0DWOzoLNsCNM9RjsVFOLtTVQ0
+				Cache-Control=no-cache
+				Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Tue, 31 Jan 2023 23:08:12 GMT
+Content-Type: application/json; charset=UTF-8
+Content-Length: 1333
+Connection: keep-alive
+Strict-Transport-Security: max-age=31536000; includeSubdomains;
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+
+{
+    "success": true,
+    "guaranteed_delivery": true,
+    "services": [
+        {
+            "carrier": "COURIER",
+            "description": "Across Town Courier Parcel",
+            "rated_weight": 2.0000,
+            "price_excluding_gst": 6.0900,
+            "price_including_gst": 7.0000,
+            "tracking_included": true,
+            "signature_included": false,
+            "product_code": "PRCXTCOUR",
+            "billing_code": "PRCXTCOUR70",
+            "product_service_code": "PRCXTCOUR",
+            "addons": [
+                {
+                    "description": "Saturday Delivery",
+                    "addon_code": "NCPTSD",
+                    "mandatory": false,
+                    "price_excluding_gst": 5.0400,
+                    "price_including_gst": 5.8000
+                },
+                {
+                    "description": "Sig Req Addon",
+                    "addon_code": "RTPWINWSR",
+                    "mandatory": false,
+                    "price_excluding_gst": 2.6100,
+                    "price_including_gst": 3.0000
+                }
+            ],
+            "service_codes": [
+                {
+                    "product_service_code": "NCPTSD",
+                    "description": "TKT Saturday Delivery"
+                },
+                {
+                    "product_service_code": "PRCXTCOUR",
+                    "description": "Across Town Courier Parcel"
+                },
+                {
+                    "product_service_code": "RTPWINWSR",
+                    "description": "Sig Req Addon"
+                }
+            ]
+        }
+    ],
+    "message_id": "225fa310-a1bc-11ed-b2a4-0662a4059c76"
+}
